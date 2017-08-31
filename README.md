@@ -1,6 +1,9 @@
 # TeamSupreme Proposal 
 ## Introduction
 ## Concept
+### Similar Offerings
+### Target Audience
+### General Use Case
 ## Team
 The team consists of 5 members that are proficient in UI and UX design. The team leader is Matt, he will be responsible to lead and manage the project. As there are 4 designers, each member will have a specific role in relation to the design process such as; creating mockups and wireframes, creating prototypes, conducting user testing, ensuring a good user interface design and a good user experience. Every individual in the group will be responsible for different logistics. In particular, Carol will be responsible for organizing equipments, especially while conducting prototypes for user testing. Sanika will find the most suitable time for all group members to attend group meetings. Bosco will handle most of the programming and backend tasks. Liam will be responsible for ensuring all steps of the design process have been undertaken correctly. 
 
@@ -63,3 +66,14 @@ Google Drive Folder | https://drive.google.com/file/d/0BwpfkIevWed0VjVFTGZMaE1xR
 Github | https://github.com/deco3500-2017/TeamSupreme 
 Github Project Management | https://github.com/deco3500-2017/TeamSupreme/projects/1
 ## Tags
+**Concepts:**
+- Collaboration
+- Awareness
+- Interaction
+- Social 
+- Impressions
+
+**Keywords:**
+- Real time communication
+- Accurate responses
+
