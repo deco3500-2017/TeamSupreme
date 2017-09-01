@@ -9,11 +9,11 @@ Users will post questions to the app, and the users who are in that location at 
 
 AskLocal is a mobile app aimed at connecting the community to answer specific question about a particular venue. An example of this might be: Is eleven rooftop bar crowded tonight? The app aims to have people at the bar give instant responses to the question.  The app uses GPS location services and Push notifications to efficiently provide answers to questions. By doing this the app attempts to solve the problem of what if I need a specific answer  to a question that does not have a fixed answer.
 
-[[https://github.com/deco3500-2017/TeamSupreme/blob/master/Mockups/1.png]]
+![Mockup 1](https://github.com/deco3500-2017/TeamSupreme/blob/master/Mockups/1.png)
 
-[[https://github.com/deco3500-2017/TeamSupreme/blob/master/Mockups/2.png]]
+![Mockup 2](https://github.com/deco3500-2017/TeamSupreme/blob/master/Mockups/2.png)
 
-[[https://github.com/deco3500-2017/TeamSupreme/blob/master/Mockups/3.png]]
+![Mockup 3](https://github.com/deco3500-2017/TeamSupreme/blob/master/Mockups/3.png)
 
 ### Similar Offerings
 There are a number of similar applications that are already exist in the market, such as Google live location data, Ask.fm, Foursquare, Yelp and so on. The advantage of AskLocal compared to Google live location data is that AskLocal is more social than statistics. Moreover, Google live only shows data based on typical visits whereas AskLocal allows users to interact with each other and get current information which may differ significantly. Ask.fm is also an application that users can post questions to your current location but not at a specific location. AskLocal has improved by allowing users to not only asking the questions of their current location but also other different locations. The questions and answers could be more useful when planning the trip. Foursquare and Yelp are two similar reviewing system where people can write or view reviews and information about a specific location. What Asklocal does better is that users could have most recent reviews and information of a particular location. In some case, such as going to a possibly crowded bar, the crowd level varies every night, you might get real time information before you make the decision to head to the bar.
