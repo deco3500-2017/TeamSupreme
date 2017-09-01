@@ -85,6 +85,7 @@ Github Project Management | https://github.com/deco3500-2017/TeamSupreme/project
 - Impressions
 
 **Keywords:**
-- Real time communication
-- Accurate responses
+- Community
+- Social Q&A
+
 
