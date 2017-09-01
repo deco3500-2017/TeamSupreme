@@ -1,4 +1,21 @@
 # TeamSupreme Proposal 
+
+- [Introduction](#introduction)
+- [Concept](#concept)
+  - [Similar Offerings](#similar-offerings)
+  - [Target Audience](#target-audience)
+  - [General Use Case](#general-use-case)
+  - [Potential Features](#potential-features)
+- [Team](#team)
+  - [Decision Making](#decision-making)
+  - [Conflict Resolution](#conflict-resolution)
+  - [Communication](#communication)
+- [Plan](#plan)
+  - [Project Phases](#project-phases)
+  - [Key Deliverables](#key-deliverables)
+  - [Resources](#resources)
+- [Tags](#tags)
+
 ## Introduction
 The team’s chosen domain is active communities and the dilemma it aims to solve is the delay in response times and lack of information about a specific venue or location that other websites and apps fail to provide. Active communities is a domain that revolves around bringing people of same interests and same locations together through social mobile computing for small daily activities. The product that has been chosen by the team to address this is AskLocal. 
 
