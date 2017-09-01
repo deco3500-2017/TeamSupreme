@@ -8,9 +8,11 @@ AskLocal is an application which allows users to gather information about what i
 Users will post questions to the app, and the users who are in that location at present will receive a notification that a question has been asked. Only users who have been there recently are able to provide an answer to the questions so the information will be up-to-date. 
 
 AskLocal is a mobile app aimed at connecting the community to answer specific question about a particular venue. An example of this might be: Is eleven rooftop bar crowded tonight? The app aims to have people at the bar give instant responses to the question.  The app uses GPS location services and Push notifications to efficiently provide answers to questions. By doing this the app attempts to solve the problem of what if I need a specific answer  to a question that does not have a fixed answer.
-
+![Mockup 1]
 (https://github.com/deco3500-2017/TeamSupreme/blob/master/Mockups/1.png)
+![Mockup 2]
 (https://github.com/deco3500-2017/TeamSupreme/blob/master/Mockups/2.png)
+![Mockup 3]
 (https://github.com/deco3500-2017/TeamSupreme/blob/master/Mockups/3.png)
 
 ### Similar Offerings
