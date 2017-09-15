@@ -20,8 +20,8 @@ What are you planning to do? | something here
 
 Member Name: | Liam Buttery
 ---|--
-What have you done? | something here
-What are you planning to do? | something here
+What have you done? | Documentation and Ideas for notifications
+What are you planning to do? | Development of notifications and user design
 
 (Carol) Shui Yan
 
