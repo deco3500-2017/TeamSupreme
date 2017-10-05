@@ -31,6 +31,6 @@ The purpose of user testing the paper prototypes was to understand what others t
 
 ### Liam Buttery
 
-**I have done**
+**I have done** The mockups for the notifications, this was done on the IOS mobile system with the use of photoshop. I have also completed the Logo for our app.
 
-**I am planning to**
+**I am planning to** Work with matt in the front end coding and implementation of the design prototype.
