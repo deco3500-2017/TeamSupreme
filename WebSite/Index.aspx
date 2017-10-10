@@ -7,6 +7,8 @@
     <title>AskLocal</title>
 </head>
 <body>
+
+	<a href="Home.aspx">Home</a></br>
     <form id="form1" runat="server">
 	<h1>Ask</h1>
 	<p>You are looking at <asp:label ID="curName" runat="server"></asp:label></p>

@@ -46,7 +46,7 @@ public partial class _Default : System.Web.UI.Page
                 break;
         }
         showQuestions();
-
+        //Response.Redirect(Request.RawUrl);
     }
 
     protected void showQuestions() {
@@ -58,6 +58,27 @@ public partial class _Default : System.Web.UI.Page
                 {
                     //print the question to questionList
                     questionlist.Text = questionlist.Text + "<br>" + q.getName() + " @ " + q.getTime().ToString() +" asked: "+ q.getQuestion() + "<br>";
+                    questionlist.Text = questionlist.Text + "<form id=\"form1\" runat=\"server\">";
+                    questionlist.Text = questionlist.Text + "</form>";
+                    var newPanel = new Panel();
+                    var newTextbox = new TextBox();
+                    var newButton = new Button();
+                    newTextbox.ID = q.GetHashCode().ToString();
+                    newTextbox.Text = "";
+                    newButton.ID = "answerButton";
+                    newButton.Text = "Answer Question";
+                    newButton.CommandArgument = q.GetHashCode().ToString();
+                    newButton.Command += new CommandEventHandler(answer);
+                    //questionlist.Text = questionlist.Text + "Answer Here: <asp:Textbox ID = \""+q+"\" runat = \"server\" Text = \"\" />" + "<br>";
+                    //questionlist.Text = questionlist.Text + "<asp:Button ID = \"answerButton\" runat = \"server\" Text = \"Answer Question\" OnClick = \"answer(q)\" />" + "<br>";
+                    newPanel.Controls.Add(newTextbox);
+                    newPanel.Controls.Add(newButton);
+                    form1.Controls.Add(newPanel);
+                    foreach (Answer ans in q.getAnswers())
+                    {
+                        questionlist.Text = questionlist.Text + "<br> <p class=\"answers\">" + ans.toString() + "</p>";
+                    }
+                    
                 }
                 break;
             case "location2":
@@ -78,4 +99,39 @@ public partial class _Default : System.Web.UI.Page
                 break;
         }
     }
+
+    protected void answer(Object sender, CommandEventArgs e)
+    {
+        string question = e.CommandArgument.ToString();
+        switch (current)
+        {
+            case "location1":
+                //questions1
+                //find "question" in questions1 and add the answer to that one
+                foreach (Question q in questions1)
+                {
+                    if (q.GetHashCode().ToString() == question)
+                    {
+                        TextBox txt = (TextBox)FindControl(question);
+                        Answer A = new Answer(txt.Text);
+                        q.addAnswer(A);
+                    }
+                }
+                break;
+            case "location2":
+                //questions1
+                Question qu2 = new Question("bosco2", questionText.Text);
+                questions2.Add(qu2);
+                break;
+            case "location3":
+                //questions1
+                Question qu3 = new Question("bosco3", questionText.Text);
+                questions3.Add(qu3);
+                break;
+            default:
+                break;
+        }
+        showQuestions();
+    }
+
 }

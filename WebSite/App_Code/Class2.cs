@@ -11,6 +11,7 @@ public class Question
     String user;
     String text;
     DateTime time;
+    List<Answer> answers;
 
 
 
@@ -19,6 +20,7 @@ public class Question
         this.user = user;
         this.text = text;
         this.time = DateTime.Now;
+        this.answers = new List<Answer>();
     }
 
     public String getName() { return this.user; }
@@ -27,5 +29,8 @@ public class Question
 
     public DateTime getTime() { return this.time; }
 
+    public void addAnswer(Answer answer) { this.answers.Add(answer); }
+
+    public List<Answer> getAnswers() { return this.answers; }
 
 }

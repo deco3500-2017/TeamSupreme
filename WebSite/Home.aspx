@@ -9,9 +9,9 @@
 <body>
     <form id="form1" runat="server">
     <div>
-		<h1>Home</h1>
+		<%--<h1>Home</h1>--%>
 		<p>Choose which location to learn more about</p>
-		<p>You can iput your username here:</p>
+		<p>You can input your username here:</p>
 		<asp:Textbox ID="usName" runat="server" Text="" />
 		<br /><br />
 		<asp:Button ID="location1" runat="server" Text="Markets" OnClick="chooseLoc" />

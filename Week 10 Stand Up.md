@@ -19,9 +19,9 @@ The purpose of user testing the paper prototypes was to understand what others t
 
 ### Bosco Bartilomo
 
-**I have done**
+**I have done** work on the technological prototype
 
-**I am planning to**
+**I am planning to** continue working on the technological prototype
 
 ### Matt Moss
 
