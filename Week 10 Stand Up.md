@@ -25,12 +25,12 @@ The purpose of user testing the paper prototypes was to understand what others t
 
 ### Matt Moss
 
-**I have done**
+**I have done** creating the digital prototype with Adobe XD which implemented feedback we received from user testing of the paper prototype. The digital prototype is a click through prototype which details the user interface and the flow of actions the user will undertake when using AskLocal. This prototype has been passed onto Sanika to finalise before we use it for user testing.
 
-**I am planning to**
+**I am planning to** work on the styling and front-end code of the design prototype for the final package. Currently this prototype is just a functional tech prototype but has no real interface. I will be working on this with Liam. 
 
 ### Liam Buttery
 
 **I have done** The mockups for the notifications, this was done on the IOS mobile system with the use of photoshop. I have also completed the Logo for our app.
 
-**I am planning to** Work with matt in the front end coding and implementation of the design prototype.
+**I am planning to** Work with Matt in the front end coding and implementation of the design prototype.
