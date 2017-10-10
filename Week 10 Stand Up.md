@@ -13,7 +13,7 @@ The purpose of user testing the paper prototypes was to understand what others t
 
 ### (Carol) Shui Yan
 
-**I have done** organising user testing for the papaer prototype I made, I have also made contribution in recording user responses. Morover, I have designed two new interfaces for two functions which are the map with qustions and the notification page.  
+**I have done** organising user testing for the papaer prototype I made, I have also made contribution in making up questions and recording user responses. Giving ideas on digital prototype based on the feedbacks we recieved. Morover, I have designed two new interfaces for two functions which are the map with qustions and the notification page.  
 
 **I am planning to**  Orgnising and conducting next prototype and recording feedbacks. Evaluating results form user testing. Start designing the first draft of conference poster. makeing basic layouts of brochures/information sheets we need in final presentation.
 
