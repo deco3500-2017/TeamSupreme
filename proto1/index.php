@@ -7,7 +7,7 @@
 
 <body>
 	<h1>AskLocal</h1>
-	<a href="question.html"><img src="images/map.png" /></a>
+	<a href="question.php"><img src="images/map.png" /></a>
 	<p>click the map to ask a question about uq art museum<p/>
 </body>
 

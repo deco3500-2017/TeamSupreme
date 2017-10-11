@@ -16,10 +16,13 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        current = Application["current"].ToString();
-        curName.Text = current;
+        if (!Page.IsPostBack)
+        {
+            current = Application["current"].ToString();
+            curName.Text = current;
 
-        showQuestions();
+            showQuestions();
+        }
     }
 
     protected void ask(object sender, EventArgs e)
@@ -57,9 +60,11 @@ public partial class _Default : System.Web.UI.Page
                 foreach (Question q in questions1)
                 {
                     //print the question to questionList
+                    questionlist.Text = "<div class=\"question\">";
                     questionlist.Text = questionlist.Text + "<br>" + q.getName() + " @ " + q.getTime().ToString() +" asked: "+ q.getQuestion() + "<br>";
                     questionlist.Text = questionlist.Text + "<form id=\"form1\" runat=\"server\">";
                     questionlist.Text = questionlist.Text + "</form>";
+                    questionlist.Text = "</div>";
                     var newPanel = new Panel();
                     var newTextbox = new TextBox();
                     var newButton = new Button();
@@ -68,7 +73,8 @@ public partial class _Default : System.Web.UI.Page
                     newButton.ID = "answerButton";
                     newButton.Text = "Answer Question";
                     newButton.CommandArgument = q.GetHashCode().ToString();
-                    newButton.Command += new CommandEventHandler(answer);
+                    newButton.Command += answer;
+                    //newButton.Command += new CommandEventHandler(answer);
                     //questionlist.Text = questionlist.Text + "Answer Here: <asp:Textbox ID = \""+q+"\" runat = \"server\" Text = \"\" />" + "<br>";
                     //questionlist.Text = questionlist.Text + "<asp:Button ID = \"answerButton\" runat = \"server\" Text = \"Answer Question\" OnClick = \"answer(q)\" />" + "<br>";
                     newPanel.Controls.Add(newTextbox);
@@ -102,6 +108,7 @@ public partial class _Default : System.Web.UI.Page
 
     protected void answer(Object sender, CommandEventArgs e)
     {
+        curName.Text = "LoSErvIlLE xd lmai";
         string question = e.CommandArgument.ToString();
         switch (current)
         {

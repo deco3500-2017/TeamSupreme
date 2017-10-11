@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ask question</title>
+<title>Questions</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -11,7 +11,17 @@
 	<form action="answer.html" method="GET">
 		<input type="text" name="question"><br>
 		<input type="submit" label="Ask">
+		<?php
+		//add whatever question is asked to table "questions"
+		
+		?>
 	</form>
+	
+	<h2>Previously asked Questions:</h2>
+	<?php
+	//for each question in table "questions", show the question and then a list of answer	s
+	
+	?>
 </body>
 
 </html>
