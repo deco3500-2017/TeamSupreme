@@ -1,0 +1,39 @@
+.login {
+height:110px;
+width:190px;
+margin:auto;
+border:1px #CCC solid;
+padding:10px;
+}
+.login input {
+padding:5px;
+margin:5px
+}
+
+
+
+img {
+text-align: center;
+  display: block;
+  max-width:350px;
+  max-height:350px;
+  width: auto;
+  height: auto;
+    padding-left: 525px;
+float: center;
+}
+
+
+.button {
+    background-color: #a3a3a3; 
+    color: #e7e7e7;
+  
+}
+.login{
+    background-color: #a3a3a3; 
+    
+    
+}
+button:hover {
+    opacity: 0.8;
+}
