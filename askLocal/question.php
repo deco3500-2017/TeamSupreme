@@ -80,7 +80,29 @@
 				echo $rowQ['User'] . " asked at " . $rowQ['Time'] . ": " . $rowQ['Qtext'] . "</div>\n";
 				$currentQ = $rowQ['QID'];
 				
+				
 				//add something to answer questions here
+				echo "<form action=\"question.php\" method=\"POST\">";
+				echo "Answer a Question:";
+				echo "<input type=\"text\" name=\"answer".$currentQ."\">";
+				echo "<input type=\"submit\" label=\"Answer\"><br>";
+				if (isset($_POST["answer".$currentQ.""])) {
+					//add whatever answer is asked to table "answers"	
+					$answer = $_POST["answer".$currentQ.""];
+					$date = date('Y-m-d H:i:s');
+					
+					try {
+						$pdo->prepare("INSERT INTO answer VALUES (NULL,?,?,?,?,?)")->execute([$answer, $rowQ['QID'], 'Bosco', rand(0,15), $date]);
+					} catch (PDOException $e) {
+						if ($e->getCode() == 1062) {
+							// Take some action if there is a key constraint violation, i.e. duplicate name
+							echo "there was a problem with your answer";
+						} else {
+							throw $e;
+						}
+					}
+				}
+				echo "</form>";
 				
 				
 				//answers for each question
