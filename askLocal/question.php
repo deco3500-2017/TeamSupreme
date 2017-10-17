@@ -5,22 +5,25 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <?php
+	
 	session_start();
-	//connect to the db
-	$host = '127.0.0.1';
-	$db   = 'asklocal';
-	$user = 'root';
-	$pass = '';
-	$charset = 'utf8';
-	
-	$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-	$opt = [
-		PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-		PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-		PDO::ATTR_EMULATE_PREPARES   => false,
-	];
-	$pdo = new PDO($dsn, $user, $pass, $opt);
-	
+	try {
+		//connect to the db
+		$host = 'localhost';
+		$db   = 'askLocal';
+		$user = 'root2';
+		$pass = '';
+		$charset = 'utf8';
+		$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+		$opt = [
+			PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+			PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+			PDO::ATTR_EMULATE_PREPARES   => false,
+		];
+		$pdo = new PDO($dsn, $user, $pass, $opt);
+	} catch (PDOException $e) {
+		echo 'Connection failed: ' . $e->getMessage();
+	}
 	if (isset($_POST["location"]) ){
 		if ($_POST["location"] != "") {
 			//change the location
@@ -28,13 +31,13 @@
 			$_SESSION["location"] = $locale;
 		}
 	}
-	
 ?>
 
 </head>
 
 <body>
 	<h1><?php echo $_SESSION['location']?></h1>
+	
 	<div class="ask">
 		<p>What do you want to know about the <?php echo $_SESSION['location']?>???<p/>
 		
@@ -92,7 +95,7 @@
 					$date = date('Y-m-d H:i:s');
 					
 					try {
-						$pdo->prepare("INSERT INTO answer VALUES (NULL,?,?,?,?,?)")->execute([$answer, $rowQ['QID'], 'Bosco', rand(0,15), $date]);
+						$pdo->prepare("INSERT INTO answer VALUES (NULL,?,?,?,?,?)")->execute([$answer, $rowQ['QID'], 'John', rand(0,15), $date]);
 					} catch (PDOException $e) {
 						if ($e->getCode() == 1062) {
 							// Take some action if there is a key constraint violation, i.e. duplicate name
