@@ -18,9 +18,9 @@ We asked the user to play around the app with the location selected as UQ and vi
 
 ### (Carol) Shui Yan
 
-**I have done**  
+**I have done** giving ideas on the digital prototype and conducting user testing for the digital prototype.
 
-**I am planning to**  
+**I am planning to**  work on the promotional material, particular brochures/information sheets and a kickstarter style video. 
 
 ### Bosco Bartilomo
 
