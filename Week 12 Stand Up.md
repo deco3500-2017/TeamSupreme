@@ -36,6 +36,6 @@ We asked the user to play around the app with the location selected as UQ and vi
 
 ### Liam Buttery
 
-**I have done** 
+**I have done** I have completed the styling for the login page.
 
-**I am planning to** 
+**I am planning to** Continue finishing the styling for the rest of the pages and preparation for the exhibition.
