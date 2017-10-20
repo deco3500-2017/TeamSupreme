@@ -3,6 +3,7 @@
 <head>
 <title>home screen</title>
 <link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" type="text/css" href="style/index.css">
 <?php
 	session_start();
 	if (isset($_POST["username"])){
@@ -24,20 +25,29 @@
 </head>
 
 <body>
-	<h1>AskLocal</h1>
-	<a href="question.php"><img src="images/map.png" /></a>
-	<p>click the map to ask a question about uq art museum<p/>
-	<?php echo "welcome ".$user."!</br>"; ?>
-	<p>Or choose from the list below:</p>
-	<form action="question.php" method="POST">
-	
-		<ul>
-			<li><input type="submit" label="Botanical Gardens" name="location" value="Botanical Gardens"></li>
-			<li><input type="submit" label="Carara Markets" name="location" value="Carara Markets"></li>
-			<li><input type="submit" label="Other" name="location" value="Other"></li>
-		</ul>
-	
-	</form>
+    <div class="sitewrapper">
+        <div class="titleheader">
+            <h1>AskLocal</h1>
+        </div>
+
+        <a href="question.php"><img class="map" src="images/map.png" /></a>
+        <div class="bottomtext">
+            <?php echo "Welcome ".$user."!</br>"; ?>
+            <p>Click the map to ask a question about UQ Art Museum<p/>
+
+               <p>Or choose from the list below:</p>
+               <form action="question.php" method="POST">
+
+                  <ul>
+                     <li><input class="button" type="submit" label="Botanical Gardens" name="location" value="Botanical Gardens"></li>
+                     <li><input class="button" type="submit" label="Carara Markets" name="location" value="Carara Markets"></li>
+                     <li><input class="button" type="submit" label="Other" name="location" value="Other"></li>
+                  </ul>
+
+               </form>
+        </div>
+    </div>
+
 </body>
 
 </html>
