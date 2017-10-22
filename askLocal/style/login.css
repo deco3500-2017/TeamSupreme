@@ -1,12 +1,14 @@
 html{
     font-family: sans-serif;
-    background-color: white;
     height: 100vh;
 }
 
 body{
     height: 100vh;
     margin: 0;
+    background-image: url(../images/backgroundimg.jpg);
+    background-size: cover;
+    background-color: #ddd;    
 }
 
 .login {

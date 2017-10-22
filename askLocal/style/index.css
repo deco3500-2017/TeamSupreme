@@ -5,7 +5,7 @@ html{
 body{
     margin: 0;
     text-align: center;
-    background-color: white;
+    background-color: #ddd;
 }
 .titleheader{
     background-color: black;
@@ -18,12 +18,13 @@ h1{
     color: white;
 }
 
-.map{
+#map{
     width: 100vw;
     max-width: 1000px;
+    border-style: none;
 }
 
-input{
+.button{
     background-color: #32A6FF;
     border: none;
     padding: 5px;

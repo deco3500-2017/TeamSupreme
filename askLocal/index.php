@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>home screen</title>
-<link rel="stylesheet" type="text/css" href="style/style.css">
 <link rel="stylesheet" type="text/css" href="style/index.css">
 <?php
 	session_start();
@@ -29,8 +28,11 @@
         <div class="titleheader">
             <h1>AskLocal</h1>
         </div>
-
-        <a href="question.php"><img class="map" src="images/map.png" /></a>
+        
+        <form action="question.php" method="POST">
+            <input id="map" type="image" src="images/map.png" name="location" value="UQ Art Museum">
+        </form>
+        
         <div class="bottomtext">
             <?php echo "Welcome ".$user."!</br>"; ?>
             <p>Click the map to ask a question about UQ Art Museum<p/>
