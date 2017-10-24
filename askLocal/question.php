@@ -38,6 +38,13 @@
 <body>
     <div class="sitewrapper">
         <div class="titleheader">
+            <div class="leftbuttons">
+				<a href="index.php"><img src="images/home.png"></a>
+			</div>
+            <div class="rightbuttons">
+                <a class="rightnavbutton" href="login.php"><h3>Logout</h3></a>
+				<a class="rightnavbutton" href="profile.php"><img src="images/profile.png"></a>
+			</div>
            <h1><?php echo $_SESSION['location']?></h1>
         </div>
         
@@ -88,10 +95,11 @@
 
 
                     //add something to answer questions here
-                    echo "<form action=\"question.php\" method=\"POST\">";
-                    echo "Answer: ";
-                    echo "<input type=\"text\" name=\"answer".$currentQ."\">";
-                    echo "<input type=\"submit\" label=\"Answer\" value=\"Answer\"><br>";
+                    echo "<form action=\"answer.php\" method=\"POST\">";
+                    //echo "Answer: ";
+                    //echo "<input type=\"text\" name=\"answer".$currentQ."\">";
+                    //echo "<input type=\"submit\" label=\"Answer\" value=\"Answer\"><br>";
+					echo "<input type=\"submit\" label=\"See Answers\" name=\"question\" value=\"".$currentQ."\"><br>";
                     if (isset($_POST["answer".$currentQ.""])) {
                         //add whatever answer is asked to table "answers"	
                         $answer = $_POST["answer".$currentQ.""];
