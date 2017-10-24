@@ -1,0 +1,31 @@
+.question{
+    margin-top: 140px;
+    margin-bottom: 120px;
+    font-weight: bold;
+}
+
+.questiontext{
+    margin-top: 10px;
+}
+
+.answer{
+    margin-bottom: 50px;
+}
+
+.voting{
+    margin: 10px 0px;
+}
+
+.upvote{
+    margin-right: 10px;
+}
+
+.upvote:hover, .downvote:active{
+    background-color: #90EE90;
+    text-decoration: none;
+}
+
+.downvote:hover, .downvote:active{
+    background-color: indianred;
+    text-decoration: none;
+}

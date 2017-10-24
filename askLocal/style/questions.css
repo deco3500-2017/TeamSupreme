@@ -76,7 +76,7 @@ input[type=text]{
 }
 
 
-#askinput{
+#askinput, #answerinput{
     border-style: none;
     border: 2px solid #000;
     width: 309px;
@@ -96,6 +96,7 @@ input[type=text]:focus, #askinput:focus{
     position: relative;
     top: 15px;
     margin-left: 10px;
+    margin-right: 73px;
 }
 
 .rightbuttons{
@@ -106,7 +107,7 @@ h3{
 	font-family: sans-serif;
 	color:#0FAEDB;
 }
-
+ 
 a{
     text-decoration: none;
 }
@@ -128,4 +129,24 @@ img{
     position: relative;
     top: 15px;
     margin-right: 10px;
+}
+
+.questioninfo, .answerinfo{
+    font-weight: bold;
+    color: #aaa;
+    font-size: 12pt;
+}
+
+.questiontext, .answertext{
+    font-size: 20pt;
+} 
+
+.ask{
+    font-weight: bold;
+    margin-top: 140px;
+    margin-bottom: 120px;
+}
+
+.seeanswers{
+    margin-top: 5px;
 }

@@ -17,14 +17,14 @@ body{
 h1{
     font-family: sans-serif;
     color: white;
-    position: relative;
-    left: 50px;
 }
 
 #map{
     width: 100vw;
     max-width: 1000px;
     border-style: none;
+    margin: 0;
+    font-size: 0px;
 }
 
 .button{
@@ -72,6 +72,7 @@ li{
     position: relative;
     top: 15px;
     margin-left: 10px;
+    margin-right: 73px;
 }
 
 .rightbuttons{
@@ -104,4 +105,12 @@ img{
     position: relative;
     top: 15px;
     margin-right: 10px;
+}
+
+#maptopleft, #maptopright, #mapbottomright, #mapbottomleft{
+    width: 50%;
+    max-width: 500px;
+    border-style: none;
+    margin: 0;
+    vertical-align: middle;
 }

@@ -90,7 +90,11 @@
                 while ($rowQ = $stmtQ->fetch())
                 {
                     echo "<div class=\"question\">";
-                    echo $rowQ['User'] . " asked at " . $rowQ['Time'] . ": " . $rowQ['Qtext'] . "</div>\n";
+					$formattedDate = date_create_from_format('Y-m-d H:i:s', $rowQ['Time']);
+					$formattedDate = $formattedDate -> format('d M, g:ia');
+					
+                    echo "<span class=\"questioninfo\">" . $rowQ['User'] . " asked at " . $formattedDate . "</span>" . "<br>";
+                    echo "<span class=\"questiontext\">" . $rowQ['Qtext'] . "</span>";
                     $currentQ = $rowQ['QID'];
 
 
@@ -99,7 +103,10 @@
                     //echo "Answer: ";
                     //echo "<input type=\"text\" name=\"answer".$currentQ."\">";
                     //echo "<input type=\"submit\" label=\"Answer\" value=\"Answer\"><br>";
-					echo "<input type=\"submit\" label=\"See Answers\" name=\"question\" value=\"".$currentQ."\"><br>";
+					echo "<input type=\"text\" name=\"question\" value=\"".$currentQ."\" hidden>\n";
+					echo "<input class=\"seeanswers\" type=\"submit\" label=\"See Answers\" value=\"See Answers\" ><br>" . "</div>\n";
+					
+					/*
                     if (isset($_POST["answer".$currentQ.""])) {
                         //add whatever answer is asked to table "answers"	
                         $answer = $_POST["answer".$currentQ.""];
@@ -116,10 +123,13 @@
                             }
                         }
                     }
+					*/
+					
                     echo "</form>";
 
 
                     //answers for each question
+					/*
                     $stmtA = $pdo->prepare('SELECT * FROM answer WHERE QID = ? ORDER BY Score DESC');
                     $stmtA->execute([$currentQ]);
                     while ($rowA = $stmtA->fetch())
@@ -127,8 +137,11 @@
                         echo "<div class=\"answer\">";
                         echo $rowA['User'] . " answered" . ": " . $rowA['Atext'] . "</div>\n";
                     }
+					*/
                     echo "</br>";
+					
                 }
+				
             } catch(PDOException $e) {
                 if ($e->getCode() == 1062) {
                     // Take some action if there is a key constraint violation, i.e. duplicate name
