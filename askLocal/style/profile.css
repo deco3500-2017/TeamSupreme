@@ -19,37 +19,6 @@ h1{
     color: white;
 }
 
-#map{
-    width: 100vw;
-    max-width: 1000px;
-    border-style: none;
-    margin: 0;
-    font-size: 0px;
-    margin-bottom: 50px;
-}
-
-.button{
-    background-color: #32A6FF;
-    border: none;
-    padding: 5px;
-    width: 250px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    color: white;
-    font-size: 16pt;
-    font-weight: bold;
-    height: 40px;
-    box-shadow: 3px 3px 5px #888;
-}
-ul{
-    padding: 0;
-}
-
-li{
-    list-style-type: none;
-}
-
-
 .sitewrapper{
     text-align: center;
     float: center;
@@ -61,11 +30,6 @@ li{
     box-shadow: 0px 0px 20px #888;
     overflow: hidden;
     padding-bottom: 40px;
-}
-
-.button:hover{
-    background-color: #2a7fff;
-    cursor: pointer;
 }
 
 .leftbuttons{
@@ -108,20 +72,58 @@ img{
     margin-right: 10px;
 }
 
-#maptopleft, #maptopright, #mapbottomright, #mapbottomleft{
-    width: 50%;
-    max-width: 500px;
-    border-style: none;
-    margin: 0;
-    vertical-align: middle;
+.profilepic{
+	
+	padding-top: 100px;
+	padding-bottom: 10px;
+	border: 1px solid 	#D3D3D3;
+}
+.profile{
+	text-align: center;
+	font: Arial; 
+	font-size: 40px;
+	padding-bottom: 30px;
+	
+}
+.profile1{
+	text-align: center;
+	font: Arial; 
+	font-size: 40px;
+	
+	
+}
+img.expand{
+	width: 20em;
+	height: 20em;
 }
 
-.bottomtext{
-    position: relative;
-    top: 30px;
+.btn-group{
+    margin-top: 40px;
+}
+
+.button{
+    background-color: #32A6FF;
+    border: none;
+    padding: 5px;
+    width: 250px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: white;
     font-size: 16pt;
+    font-weight: bold;
+    height: 50px;
+    box-shadow: 3px 3px 5px #888;
 }
 
-.welcometext{
-    font-weight: bold;
+.button:hover{
+    background-color: #2a7fff;
+    cursor: pointer;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
 }

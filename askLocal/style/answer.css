@@ -20,12 +20,12 @@
     margin-right: 10px;
 }
 
-.upvote:hover, .downvote:active{
+#upvote:hover{
     background-color: #90EE90;
     text-decoration: none;
 }
 
-.downvote:hover, .downvote:active{
+#downvote:hover{
     background-color: indianred;
     text-decoration: none;
 }

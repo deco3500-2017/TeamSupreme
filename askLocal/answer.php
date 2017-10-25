@@ -108,9 +108,9 @@
 
             echo "<form action=\"answer.php\" method=\"POST\">";
                 echo "<input type=\"text\" name=\"question\" value=\"". $_SESSION['question'] ."\" hidden>";
-            
-                echo "<div class=\"voting\">" . "<input class=\"upvote\" type=\"submit\" label=\"Answer\" name=\"vote\" value=\"Upvote\">";
-                echo "<input class=\"downvote\" type=\"submit\" label=\"Answer\" name=\"vote\" value=\"Downvote\">" . "</div>";
+				echo "<input type=\"text\" name=\"answervote\" value=\"". $rowA['AID'] ."\" hidden>";
+                echo "<div class=\"voting\">" . "<input id=\"upvote\" type=\"submit\" label=\"Answer\" name=\"vote\" value=\"Upvote\">";
+                echo "<input id=\"downvote\" type=\"submit\" label=\"Answer\" name=\"vote\" value=\"Downvote\">" . "</div>";
             echo "</form>";
 
 
@@ -125,8 +125,8 @@
                         $newscore = $rowA['Score'];
                         $newscore = $newscore-1;
                     }
-                    $stmtU = $pdo->prepare('UPDATE answer SET Score = ? WHERE QID = ?');
-                    $stmtU->execute([$newscore, $_SESSION['question']]);
+                    $stmtU = $pdo->prepare('UPDATE answer SET Score = ? WHERE QID = ? AND AID = ?');
+                    $stmtU->execute([$newscore, $_SESSION['question'], $_POST['answervote']]);
                 } catch (PDOException $e) {
 
                 }

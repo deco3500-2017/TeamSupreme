@@ -47,9 +47,12 @@
 			</div>
            <h1><?php echo $_SESSION['location']?></h1>
         </div>
-        
-        <div class="ask">
-            <p class="topquestion">What would you like to know about the <?php echo $_SESSION['location']?>?<p/>
+		<?php $locale = str_replace(' ', '_', $_SESSION['location']);?>
+        <?php 
+        echo "<div class=\"ask\" style=\"background: url(images/" . $locale . ".jpg) center; width: 100vw; max-width: 1000px;\">";
+            ?>
+        <div class="questionwrapper">
+            <p class="topquestion">What would you like to know about <?php echo $_SESSION['location']?>?<p/>
 
             <form action="question.php" method="POST">
                 <input id="askinput" type="text" name="question"><br>
@@ -77,7 +80,8 @@
                 ?>
             </form>
             </br>
-        </div>
+    </div>
+    </div>
 
 
         <h2>Previously asked Questions:</h2>
