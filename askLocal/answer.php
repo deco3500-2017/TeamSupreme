@@ -48,22 +48,27 @@
 			</div>
            <h1>Answer Questions</h1>
         </div> 
-
+        
+        <?php $locale = str_replace(' ', '_', $_SESSION['location']);?>
         <?php 
-        $stmtQ = $pdo->prepare('SELECT * FROM question WHERE QID = ?');
-        $stmtQ->execute([$_SESSION['question']]);
-        while ($rowQ = $stmtQ->fetch()){
-            echo "<div class=\"question\">";
-            
-            $formattedDate = date_create_from_format('Y-m-d H:i:s', $rowQ['Time']);
-            $formattedDate = $formattedDate -> format('d M, g:ia');
-            
-            echo "<span class=\"questiontext\">" . $rowQ['Qtext'] . "</span>" . "<br>";
-            echo "<span class=\"questioninfo\">" . $rowQ['User'] . " asked at " . $formattedDate . "</span>" . "<br>" . "<br>";
-            $currentQ = $rowQ['QID'];
-            //echo "</div>";
-        }
-        ?>
+        echo "<div class=\"ask\" style=\"background: url(images/" . $locale . ".jpg) center; width: 100vw; max-width: 1000px;\">";
+            ?>
+        <div class="questionwrapper">
+            <?php 
+            $stmtQ = $pdo->prepare('SELECT * FROM question WHERE QID = ?');
+            $stmtQ->execute([$_SESSION['question']]);
+            while ($rowQ = $stmtQ->fetch()){
+                echo "<div class=\"question\">";
+
+                $formattedDate = date_create_from_format('Y-m-d H:i:s', $rowQ['Time']);
+                $formattedDate = $formattedDate -> format('d M, g:ia');
+
+                echo "<span class=\"questiontext\">" . $rowQ['Qtext'] . "</span>" . "<br>";
+                echo "<span class=\"questioninfo\">" . $rowQ['User'] . " asked at " . $formattedDate . "</span>" . "<br>" . "<br>";
+                $currentQ = $rowQ['QID'];
+                //echo "</div>";
+            }
+            ?>
 
         <?php
         echo "<form action=\"answer.php\" method=\"POST\">";
@@ -89,6 +94,8 @@
             }
         }
         ?>
+        </div>
+    </div>
 
         <h2>Previous Answers</h2>
         <?php

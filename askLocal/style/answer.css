@@ -1,13 +1,3 @@
-.question{
-    margin-top: 140px;
-    margin-bottom: 120px;
-    font-weight: bold;
-}
-
-.questiontext{
-    margin-top: 10px;
-}
-
 .answer{
     margin-bottom: 50px;
 }
@@ -28,4 +18,8 @@
 #downvote:hover{
     background-color: indianred;
     text-decoration: none;
+}
+
+.question{
+    margin: 0;
 }
