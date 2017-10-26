@@ -30,7 +30,7 @@ First Prototype
 Participants: 3
 The first user testing session was conducted to test paper prototype. It aims to test the interface of the application and to see whether we can add more unique functions. It also tested whether the user can be able to easily use the application (such as, how easy to find the button to post question). 
 The session has recieved lots of valuable feedback on visual design and usablity. All the testers are able to use the map to ask questions. The concept was acceptable and the app needs to have a menu bar on the top to better navigate users. All the users liked the point system and most users suggested to allow the poster gets to decide how the points divided to each user. Also, the poster should able to decide how long should the question remain on the app.
-
+TeamSupreme/User testing 1.md
 #### Digital Prototype
 Second Prototype
 Participants: 5
