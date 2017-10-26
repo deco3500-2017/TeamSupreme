@@ -11,6 +11,7 @@ Once on the web app, you can login with your name and input any password you lik
 The problem space chosen by the team is Active Communities, the team has focused on solving the delay in response times and lack of information of specific locations.   
 ### Solution
  AskLocal aims to address this problem by providing a real time question and answer platform.  
+ ![Mockup 1](https://github.com/deco3500-2017/TeamSupreme/blob/master/Mockups/1.png)
 ## 4. Process: 
 ### User Research 
 The initial idea for AskLocal was made by Matt, it aims to solve the problem that users being able to ask questions about one specific location and it can be answered by people who are actually in the location or has been to the location. The users are able to choose questions from map and users will get notification if a question has been asked nearby.
