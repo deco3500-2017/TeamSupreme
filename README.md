@@ -35,7 +35,7 @@ https://github.com/deco3500-2017/TeamSupreme/blob/master/paper%20prototype/User%
 Second Prototype
 Participants: 5
 The second user testing was conducted to test the click through prototype. It was focused on the functional aspect of AskLocal. Users are required to read a snario before user testing. We have got feedbacks on what the users are expect to see on location page. We have also recived feedback on categories while posting questions. 
-https://github.com/deco3500-2017/TeamSupreme/blob/master/user%20testing%202
+https://github.com/deco3500-2017/TeamSupreme/blob/master/digital%20prototype/User%20testing%20-%20Digital%20prototype.pdf
 #### Final Prototype
 The third user testing for functional prototype was conducted in the exhibition, we have got lots of helpful feedback from peers and tutors for future develop.
 ## 5. Group Contributions:
