@@ -17,7 +17,7 @@ The problem space chosen by the team is Active Communities, the team has focused
 The initial idea for AskLocal was made by Matt, it aims to solve the problem that users being able to ask questions about one specific location and it can be answered by people who are actually in the location or has been to the location. The users are able to choose questions from map and users will get notification if a question has been asked nearby.
 #### Paper Prototype
 As it is the very fisrt prototype, it was paper based and has only introduced very basic and primary feature of AskLocal. It has the question posting and answeing function for user to test. Furthermore, a notification page was designed to demonstrate how the app encourages user to answer questions to get points. 
-![Mockup 1](https://github.com/deco3500-2017/TeamSupreme/blob/master/Mockups/1.png)
+![Mockup 1](https://github.com/deco3500-2017/TeamSupreme/blob/master/paper%20prototype/paper2.jpg)
 #### Digital Prototype
 It is a digital click through made by Adobe XD to display all the functions of AskLocal. This prototype contains a few now pages: login page, personal profile page, question view page and location information page. It also contains a group of new functions, such as voting system and set point, category and duration while asking questions. 
 
@@ -46,5 +46,5 @@ Sanika Naik | 43949263 | Reworking exsiting idea throughout the semester, Market
 Carol Yan | 43801642 |Reworking exsiting idea throughout the semester, First prototype - design, First prototype - make paper prototype, First prototype - user testing, Second prototype - design, Second prototype - user testing, Second prototype -  feedback evaluation, Promotional material - Brochures, Documentaion.  
 Bosco Bartilomo | 4356893 |Reworking exsiting idea throughout the semester, Market and technology research, Third prototype -back-end implitation, 
 Matthew Moss | 43231454 |Initial Idea, Reworking exsiting idea throughout the semester, Second prototype - design, Second prototype - make prototype, Third prototype - design (front end), 
-Liam Buttery | 43531538 |Third prototype - design (front end), Reworking exsiting idea throughout the semester
+Liam Buttery | 43531538 |Third prototype - design (front end), 
 
