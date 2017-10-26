@@ -45,5 +45,5 @@ Sanika Naik | 43949263 | Reworking exsiting idea throughout the semester, Market
 Carol Yan | 43801642 |Reworking exsiting idea throughout the semester, First prototype - design, First prototype - make paper prototype, First prototype - user testing, Second prototype - design, Second prototype - user testing, Second prototype -  feedback evaluation, Promotional material - Brochures, Documentaion.  
 Bosco Bartilomo | 4356893 |Reworking exsiting idea throughout the semester, Market and technology research, Third prototype -back-end implitation, 
 Matthew Moss | 43231454 |Initial Idea, Reworking exsiting idea throughout the semester, Second prototype - design, Second prototype - make prototype, Third prototype - design (front end), 
-Liam Buttery | 43531538 |Third prototype - design (front end), 
+Liam Buttery | 43531538 |Third prototype - design (front end), Reworking exsiting idea throughout the semester
 
