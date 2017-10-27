@@ -24,15 +24,15 @@ We asked the user to play around the app with the location selected as UQ and vi
 
 ### Bosco Bartilomo
 
-**I have done** 
+**I have done** Market research, idea refinement, initial prototype work
 
-**I am planning to** 
+**I am planning to** Complete the final prototype for the exhibition
 
 ### Matt Moss
 
 **I have done** 
 
-**I am planning to** 
+**I am planning to** Front end final protoype design
 
 ### Liam Buttery
 
